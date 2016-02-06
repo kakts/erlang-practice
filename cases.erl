@@ -19,3 +19,4 @@ beach(Temperature) ->
     _ ->
       'avoid beach'
   end.
+  
