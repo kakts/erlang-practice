@@ -8,7 +8,7 @@ empty() -> {node, 'nil'}.
 
 %% ノード追加
 insert(key, val, {node, 'nil'}) ->
-  {node, {key, val, {node, 'nil'}, {node, 'nil}}};
+  {node, {key, val, {node, 'nil'}, {node, 'nil'}}};
 insert(newKey, newVal, {node, {key, val, smaller, larger}})
   %% 追加するキーがそのノードのkeyより小さい場合
   when newKey < key ->
